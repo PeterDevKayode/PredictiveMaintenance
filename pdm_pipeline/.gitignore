@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# NOTE: data/*.csv and outputs/models/*.joblib and outputs/metrics/*.json
+# are intentionally NOT ignored - they are committed so the deployed
+# Streamlit app has real data and pretrained models available immediately,
+# without needing to retrain on every deploy/restart.

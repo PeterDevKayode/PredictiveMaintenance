@@ -1,0 +1,110 @@
+{
+  "classification": {
+    "persistence_baseline": {
+      "accuracy": 0.914471172203131,
+      "precision_weighted": 0.8362575247905685,
+      "recall_weighted": 0.914471172203131,
+      "f1_weighted": 0.8736172546575584,
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          173
+        ],
+        [
+          0,
+          0,
+          51
+        ],
+        [
+          0,
+          0,
+          2395
+        ]
+      ],
+      "labels_order": [
+        "Critical",
+        "Warning",
+        "Healthy"
+      ]
+    },
+    "random_forest": {
+      "accuracy": 0.8289423444062619,
+      "precision_weighted": 0.9189047755413735,
+      "recall_weighted": 0.8289423444062619,
+      "f1_weighted": 0.86599522797397,
+      "confusion_matrix": [
+        [
+          0,
+          173,
+          0
+        ],
+        [
+          0,
+          51,
+          0
+        ],
+        [
+          275,
+          0,
+          2120
+        ]
+      ],
+      "labels_order": [
+        "Critical",
+        "Warning",
+        "Healthy"
+      ]
+    },
+    "xgboost": {
+      "accuracy": 0.8171057655593738,
+      "precision_weighted": 0.8533709626154129,
+      "recall_weighted": 0.8171057655593738,
+      "f1_weighted": 0.8345265017525499,
+      "confusion_matrix": [
+        [
+          12,
+          0,
+          161
+        ],
+        [
+          0,
+          24,
+          27
+        ],
+        [
+          273,
+          18,
+          2104
+        ]
+      ],
+      "labels_order": [
+        "Critical",
+        "Warning",
+        "Healthy"
+      ]
+    }
+  },
+  "regression": {
+    "persistence_baseline": {
+      "rmse_hours": 617.1745841769182,
+      "mae_hours": 86.96449026345934,
+      "r2": -0.020257109466303103
+    },
+    "svr": {
+      "rmse_hours": 1672.7648898253622,
+      "mae_hours": 1381.6333898232358,
+      "r2": -6.4948573664413916
+    },
+    "random_forest": {
+      "rmse_hours": 1274.8970087485561,
+      "mae_hours": 444.53607012132386,
+      "r2": -3.3535523175899344
+    },
+    "xgboost": {
+      "rmse_hours": 1254.9677346428161,
+      "mae_hours": 378.97688040950516,
+      "r2": -3.2185061243096857
+    }
+  }
+}
